@@ -22,12 +22,6 @@ function save(){
   localStorage.setItem("setup", JSON.stringify(nlwSetup.data))
 }
 
-
-// const data = {
-//   run: ["01-19", "01-20", "01-21"],
-//   water: ["01-20"],
-// }
-
 const data = JSON.parse(localStorage.getItem("setup")) || {}
 nlwSetup.setData(data)
 nlwSetup.load()
